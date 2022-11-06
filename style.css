@@ -1,0 +1,14 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(16, auto);
+    max-height: 100vh;
+    aspect-ratio: 1;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.grid div {
+    aspect-ratio: 1;
+    border-style: solid;
+    border-width: 1px;
+}
