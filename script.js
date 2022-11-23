@@ -19,8 +19,12 @@ function generateGrid(gridSize) {
 }
 
 function colorTile() {
-    this.style.backgroundColor = trailColor;
+    this.style.backgroundColor = `rgb(${getRgb()},${getRgb()},${getRgb()})`;
     this.removeEventListener("mouseenter", colorTile);
+}
+
+function getRgb() {
+    return Math.floor(Math.random() * 256);
 }
 
 function newGrid() {
